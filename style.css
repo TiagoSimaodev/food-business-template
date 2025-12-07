@@ -253,3 +253,92 @@ section{
 .footer .share img:hover {
     background-color: var(--main-color);
 }
+
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 8px; /* diminui tudo proporcionalmente */
+    }
+
+    /* HEADER */
+    .header section {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+        margin: 0.5rem;
+    }
+
+    /* HOME */
+    .home-container section {
+        padding-top: 12rem; /* para não ficar atrás do menu fixo */
+        text-align: center;
+    }
+
+    .content h3 {
+        font-size: 3.6rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    /* ABOUT */
+    .about .row {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .about .row .container-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about .content {
+        padding: 0;
+    }
+
+    /* MENU */
+    .menu .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .menu .box-container .box {
+        padding: 3rem;
+    }
+
+    /* REVIEW */
+    .review .box {
+        padding: 2rem 1rem;
+    }
+
+    .review .box p {
+        font-size: 1.4rem;
+    }
+
+    /* ADDRESS */
+    iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    /* GENERAL IMAGE FIX */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
